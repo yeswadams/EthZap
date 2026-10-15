@@ -28,6 +28,11 @@ jobs:
         with:
           node-version: 20
           cache: 'pnpm'
+      
+      - name: Install Foundry (Forge, Cast, Anvil)
+        uses: foundry-rs/foundry-toolchain@v1
+        with:
+          version: nightly
 
       - name: Install Monorepo Dependencies
         run: pnpm install --frozen-lockfile
@@ -39,8 +44,11 @@ jobs:
       - name: Enforce Code Style (Lint Changed Only)
         run: pnpm nx affected -t lint
 
-      - name: Run Testing Matrix (Test Changed Only)
+      - name: Run Testing Matrix (Includes Anvil Fork Tests)
         run: pnpm nx affected -t test
+        env:
+          MAINNET_RPC_URL: ${{ secrets.MAINNET_RPC }}
+          TESTNET_RPC_URL: ${{ secrets.TESTNET_RPC }}
 
       - name: Validate Production Compilation (Build Changed Only)
         run: pnpm nx affected -t build
