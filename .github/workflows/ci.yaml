@@ -1,0 +1,54 @@
+name: Monorepo CI Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  quality-assurance:
+    name: Lint, Test & Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          # Nx Affected requires a deep fetch history to compare git SHAs
+          fetch-depth: 0
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 9 # Matches your local major pnpm version
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+      
+      - name: Install Foundry (Forge, Cast, Anvil)
+        uses: foundry-rs/foundry-toolchain@v1
+        with:
+          version: nightly
+
+      - name: Install Monorepo Dependencies
+        run: pnpm install --frozen-lockfile
+
+      # Derives SHAs for Nx Affected execution comparison
+      - name: Initialize Nx Affected Tracking
+        uses: nrwl/nx-set-shas@v4
+
+      - name: Enforce Code Style (Lint Changed Only)
+        run: pnpm nx affected -t lint
+
+      - name: Run Testing Matrix (Includes Anvil Fork Tests)
+        run: pnpm nx affected -t test
+        env:
+          MAINNET_RPC_URL: ${{ secrets.MAINNET_RPC }}
+          TESTNET_RPC_URL: ${{ secrets.TESTNET_RPC }}
+
+      - name: Validate Production Compilation (Build Changed Only)
+        run: pnpm nx affected -t build
