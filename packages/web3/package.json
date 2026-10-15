@@ -4,5 +4,12 @@
     "build": "tsc",
     "lint": "eslint .",
     "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "vitest": "^5.0.4"
+  },
+  "dependencies": {
+    "ethers": "^6.17.0"
   }
 }
