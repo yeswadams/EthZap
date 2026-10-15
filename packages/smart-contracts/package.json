@@ -1,9 +1,12 @@
 {
-  "name": "@app/web3",
+  "name": "@app/smart-contracts",
+  "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "build": "tsc",
+    "build": "forge build",
     "lint": "eslint .",
-    "test": "vitest run"
+    "test": "forge test",
+    "format": "forge fmt"
   },
   "devDependencies": {
     "@types/node": "^26.6.5",

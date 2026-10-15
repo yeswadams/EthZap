@@ -1,0 +1,464 @@
+{
+  "version": "6.0",
+  "nxVersion": "23.3.0",
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".github/workflows/ci.yaml",
+        "hash": "1641824265057322395"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "987422939859577920"
+      },
+      {
+        "file": "nx.json",
+        "hash": "18439492622741869284"
+      },
+      {
+        "file": "package.json",
+        "hash": "10652384960416477338"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "17765694963103129190"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "13392315846763307087"
+      }
+    ],
+    "projectFileMap": {
+      "@app/client": [
+        {
+          "file": "apps/client/.gitignore",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/client/README.md",
+          "hash": "8893609413778691344"
+        },
+        {
+          "file": "apps/client/eslint.config.js",
+          "hash": "3482941610897540299"
+        },
+        {
+          "file": "apps/client/index.html",
+          "hash": "7575831410758623410"
+        },
+        {
+          "file": "apps/client/package-lock.json",
+          "hash": "16368202505041006948"
+        },
+        {
+          "file": "apps/client/package.json",
+          "hash": "12945666165262838501",
+          "deps": [
+            "npm:@eslint/js",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@vitejs/plugin-react",
+            "npm:eslint",
+            "npm:eslint-plugin-react-hooks",
+            "npm:eslint-plugin-react-refresh",
+            "npm:globals@16.5.0",
+            "npm:vite",
+            "npm:@tailwindcss/vite",
+            "npm:react",
+            "npm:react-dom",
+            "npm:tailwindcss"
+          ]
+        },
+        {
+          "file": "apps/client/public/vite.svg",
+          "hash": "16046085400642193116"
+        },
+        {
+          "file": "apps/client/src/App.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/client/src/App.jsx",
+          "hash": "4675610827104694967"
+        },
+        {
+          "file": "apps/client/src/assets/react.svg",
+          "hash": "16069471864800376455"
+        },
+        {
+          "file": "apps/client/src/components/Footer.jsx",
+          "hash": "4040077434021516760"
+        },
+        {
+          "file": "apps/client/src/components/Loader.jsx",
+          "hash": "8950793273066630340"
+        },
+        {
+          "file": "apps/client/src/components/Navbar.jsx",
+          "hash": "8086754639966647281"
+        },
+        {
+          "file": "apps/client/src/components/Services.jsx",
+          "hash": "8498716921056865"
+        },
+        {
+          "file": "apps/client/src/components/Transactions.jsx",
+          "hash": "6850169917330292144"
+        },
+        {
+          "file": "apps/client/src/components/Welcome.jsx",
+          "hash": "17597262534379542348"
+        },
+        {
+          "file": "apps/client/src/components/index.js",
+          "hash": "4602729172705726815"
+        },
+        {
+          "file": "apps/client/src/index.css",
+          "hash": "3761653156789764594"
+        },
+        {
+          "file": "apps/client/src/main.jsx",
+          "hash": "12234108228339956655"
+        },
+        {
+          "file": "apps/client/vite.config.js",
+          "hash": "5893203365589078417"
+        }
+      ],
+      "@app/web3": [
+        {
+          "file": "packages/web3/.github/workflows/test.yml",
+          "hash": "10784429377469114777"
+        },
+        {
+          "file": "packages/web3/.gitignore",
+          "hash": "1404269522404979543"
+        },
+        {
+          "file": "packages/web3/.gitmodules",
+          "hash": "12080829081420237293"
+        },
+        {
+          "file": "packages/web3/README.md",
+          "hash": "8255335721713175299"
+        },
+        {
+          "file": "packages/web3/foundry.lock",
+          "hash": "16530638752841411598"
+        },
+        {
+          "file": "packages/web3/foundry.toml",
+          "hash": "15317404434514324053"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/.gitattributes",
+          "hash": "372701395918495307"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/.github/CODEOWNERS",
+          "hash": "705078292533945411"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/.github/dependabot.yml",
+          "hash": "14208959627573862868"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/.github/workflows/ci.yml",
+          "hash": "3601162159596896714"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/.github/workflows/scan-github-actions.yml",
+          "hash": "12094993489620102169"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/.github/workflows/sync.yml",
+          "hash": "15893512025934885328"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/.gitignore",
+          "hash": "1726114465837318867"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/CONTRIBUTING.md",
+          "hash": "1057778669072505224"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/LICENSE-APACHE",
+          "hash": "8645871963587928210"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/LICENSE-MIT",
+          "hash": "7371318378930887479"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/README.md",
+          "hash": "16567948116060458082"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/RELEASE_CHECKLIST.md",
+          "hash": "4717924449407876804"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/foundry.toml",
+          "hash": "11656509008725433056"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/package.json",
+          "hash": "12879010102493757734"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/scripts/vm.py",
+          "hash": "11136126337526442529"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/src/Base.sol",
+          "hash": "395649754296765306"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/src/Config.sol",
+          "hash": "13950182993154283134"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/src/LibVariable.sol",
+          "hash": "7334134018964372236"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/src/Script.sol",
+          "hash": "11314977906427725026"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/src/StdAssertions.sol",
+          "hash": "18244493425843575435"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/src/StdChains.sol",
+          "hash": "871879550899817951"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/src/StdCheats.sol",
+          "hash": "13954588896203405979"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/src/StdConfig.sol",
+          "hash": "17299771599061861061"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/src/StdConstants.sol",
+          "hash": "7954733397113467057"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/src/StdError.sol",
+          "hash": "2055161391815271597"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/src/StdInvariant.sol",
+          "hash": "13007224076997688863"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/src/StdJson.sol",
+          "hash": "9171858448583385215"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/src/StdMath.sol",
+          "hash": "11656744110037994934"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/src/StdSecp256k1.sol",
+          "hash": "2501083481550581519"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/src/StdStorage.sol",
+          "hash": "18193746601006688321"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/src/StdStyle.sol",
+          "hash": "14206419329279160112"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/src/StdToml.sol",
+          "hash": "16517671744840919202"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/src/StdUtils.sol",
+          "hash": "3114368615688751843"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/src/Test.sol",
+          "hash": "11779029681595000286"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/src/Vm.sol",
+          "hash": "6287905608099239934"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/src/console.sol",
+          "hash": "14684168284731028397"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/src/console2.sol",
+          "hash": "18123704658028557152"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/src/interfaces/IERC1155.sol",
+          "hash": "7702749701216034599"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/src/interfaces/IERC165.sol",
+          "hash": "3054213286112468267"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/src/interfaces/IERC20.sol",
+          "hash": "3304142487153387066"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/src/interfaces/IERC4626.sol",
+          "hash": "12419024201625798666"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/src/interfaces/IERC6909.sol",
+          "hash": "556540614674725437"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/src/interfaces/IERC721.sol",
+          "hash": "3455359938322895394"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/src/interfaces/IERC7540.sol",
+          "hash": "11184709485331937730"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/src/interfaces/IERC7575.sol",
+          "hash": "15050808678177775506"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/src/interfaces/IMulticall3.sol",
+          "hash": "8292362528785295193"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/src/safeconsole.sol",
+          "hash": "529970386821597002"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/test/CommonBase.t.sol",
+          "hash": "148254678331363144"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/test/Config.t.sol",
+          "hash": "18157111968397827569"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/test/LibVariable.t.sol",
+          "hash": "8467822053297780449"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/test/StdAssertions.t.sol",
+          "hash": "914158136668211575"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/test/StdChains.t.sol",
+          "hash": "16394415568864876286"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/test/StdCheats.t.sol",
+          "hash": "15779705849591522129"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/test/StdConstants.t.sol",
+          "hash": "5023192793830193533"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/test/StdError.t.sol",
+          "hash": "13143636218840611465"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/test/StdJson.t.sol",
+          "hash": "13087936448075772562"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/test/StdMath.t.sol",
+          "hash": "3370130553898737827"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/test/StdSecp256k1.t.sol",
+          "hash": "5447150727815606282"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/test/StdStorage.t.sol",
+          "hash": "3948870919676352845"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/test/StdStyle.t.sol",
+          "hash": "206525710332850803"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/test/StdToml.t.sol",
+          "hash": "3414883123149152013"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/test/StdUtils.t.sol",
+          "hash": "15137867593117996227"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/test/Vm.t.sol",
+          "hash": "8976370927286809500"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/test/compilation/CompilationScript.sol",
+          "hash": "10626977215568512337"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/test/compilation/CompilationScriptBase.sol",
+          "hash": "4210673079356815516"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/test/compilation/CompilationStdSecp256k1.sol",
+          "hash": "17797746659669672453"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/test/compilation/CompilationTest.sol",
+          "hash": "7365893052604432486"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/test/compilation/CompilationTestBase.sol",
+          "hash": "11122905264184298803"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/test/fixtures/broadcast.log.json",
+          "hash": "14073872679017582533"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/test/fixtures/config.toml",
+          "hash": "10876773646988426288"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/test/fixtures/test.json",
+          "hash": "5836202662042014898"
+        },
+        {
+          "file": "packages/web3/lib/forge-std/test/fixtures/test.toml",
+          "hash": "17585427752481793083"
+        },
+        {
+          "file": "packages/web3/package.json",
+          "hash": "15542135609526287450"
+        },
+        {
+          "file": "packages/web3/script/Counter.s.sol",
+          "hash": "3397991510829112135"
+        },
+        {
+          "file": "packages/web3/src/Counter.sol",
+          "hash": "1272575550349786961"
+        },
+        {
+          "file": "packages/web3/test/Counter.t.sol",
+          "hash": "17616180533122332183"
+        }
+      ]
+    }
+  },
+  "externalNodesHash": "12914793188027148369"
+}
