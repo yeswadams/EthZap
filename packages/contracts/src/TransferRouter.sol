@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.28;
+pragma solidity ^0.8.28;
 
 /**
  * @title TransferRouter
- * @author Your Name
+ * @author Adams Yeswa
  * @notice Efficiently routes native ETH to multiple destination addresses in a single transaction.
  */
 contract TransferRouter {
