@@ -50,8 +50,8 @@ jobs:
       - name: Run Testing Matrix (Includes Anvil Fork Tests)
         run: pnpm nx affected -t test
         env:
-          MAINNET_RPC_URL: ${{ secrets.MAINNET_RPC }}
-          TESTNET_RPC_URL: ${{ secrets.TESTNET_RPC }}
+          MAINNET_RPC_URL: ${{ secrets.MAINNET_RPC_URL }}
+          TESTNET_RPC_URL: ${{ secrets.TESTNET_RPC_URL }}
 
       - name: Validate Production Compilation (Build Changed Only)
         run: pnpm nx affected -t build
