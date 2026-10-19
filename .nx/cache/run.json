@@ -1,0 +1,43 @@
+{
+  "run": {
+    "command": "nx run-many -t test",
+    "startTime": "2026-10-19T16:07:05.691Z",
+    "endTime": "2026-10-19T16:07:10.930Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "@app/contracts:test",
+      "target": "test",
+      "projectName": "@app/contracts",
+      "hash": "1872445986883942607",
+      "startTime": "2026-10-19T16:07:05.733Z",
+      "endTime": "2026-10-19T16:07:06.263Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "@app/client:test",
+      "target": "test",
+      "projectName": "@app/client",
+      "hash": "16829887870819378601",
+      "startTime": "2026-10-19T16:07:05.733Z",
+      "endTime": "2026-10-19T16:07:06.737Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    },
+    {
+      "taskId": "@app/web3:test",
+      "target": "test",
+      "projectName": "@app/web3",
+      "hash": "12825426964055947260",
+      "startTime": "2026-10-19T16:07:05.733Z",
+      "endTime": "2026-10-19T16:07:10.929Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    }
+  ]
+}
