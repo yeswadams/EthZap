@@ -1,5 +1,5 @@
 {
-  "key": "1733804090090066462",
+  "key": "13142433788565938861",
   "data": [
     {
       "source": "npm:@babel/code-frame",
@@ -303,22 +303,32 @@
     },
     {
       "source": "npm:@emnapi/core",
-      "target": "npm:tslib",
+      "target": "npm:tslib@2.8.1",
       "type": "static"
     },
     {
       "source": "npm:@emnapi/runtime",
-      "target": "npm:tslib",
+      "target": "npm:tslib@2.8.1",
       "type": "static"
     },
     {
       "source": "npm:@emnapi/wasi-threads",
-      "target": "npm:tslib",
+      "target": "npm:tslib@2.8.1",
       "type": "static"
     },
     {
       "source": "npm:@eslint-community/eslint-utils",
-      "target": "npm:eslint",
+      "target": "npm:eslint@8.57.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:@eslint-community/eslint-utils",
+      "target": "npm:eslint-visitor-keys@3.4.3",
+      "type": "static"
+    },
+    {
+      "source": "npm:@eslint-community/eslint-utils",
+      "target": "npm:eslint@9.39.5",
       "type": "static"
     },
     {
@@ -352,47 +362,92 @@
       "type": "static"
     },
     {
-      "source": "npm:@eslint/eslintrc",
+      "source": "npm:@eslint/eslintrc@2.1.4",
       "target": "npm:ajv",
       "type": "static"
     },
     {
-      "source": "npm:@eslint/eslintrc",
+      "source": "npm:@eslint/eslintrc@2.1.4",
       "target": "npm:debug",
       "type": "static"
     },
     {
-      "source": "npm:@eslint/eslintrc",
-      "target": "npm:espree",
+      "source": "npm:@eslint/eslintrc@2.1.4",
+      "target": "npm:espree@9.6.1",
       "type": "static"
     },
     {
-      "source": "npm:@eslint/eslintrc",
-      "target": "npm:globals@14.0.0",
+      "source": "npm:@eslint/eslintrc@2.1.4",
+      "target": "npm:globals@13.24.0",
       "type": "static"
     },
     {
-      "source": "npm:@eslint/eslintrc",
+      "source": "npm:@eslint/eslintrc@2.1.4",
       "target": "npm:ignore@5.3.2",
       "type": "static"
     },
     {
-      "source": "npm:@eslint/eslintrc",
+      "source": "npm:@eslint/eslintrc@2.1.4",
       "target": "npm:import-fresh",
       "type": "static"
     },
     {
-      "source": "npm:@eslint/eslintrc",
+      "source": "npm:@eslint/eslintrc@2.1.4",
       "target": "npm:js-yaml",
       "type": "static"
     },
     {
-      "source": "npm:@eslint/eslintrc",
+      "source": "npm:@eslint/eslintrc@2.1.4",
       "target": "npm:minimatch@3.1.5",
       "type": "static"
     },
     {
-      "source": "npm:@eslint/eslintrc",
+      "source": "npm:@eslint/eslintrc@2.1.4",
+      "target": "npm:strip-json-comments",
+      "type": "static"
+    },
+    {
+      "source": "npm:@eslint/eslintrc@3.3.7",
+      "target": "npm:ajv",
+      "type": "static"
+    },
+    {
+      "source": "npm:@eslint/eslintrc@3.3.7",
+      "target": "npm:debug",
+      "type": "static"
+    },
+    {
+      "source": "npm:@eslint/eslintrc@3.3.7",
+      "target": "npm:espree@10.4.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:@eslint/eslintrc@3.3.7",
+      "target": "npm:globals@14.0.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:@eslint/eslintrc@3.3.7",
+      "target": "npm:ignore@5.3.2",
+      "type": "static"
+    },
+    {
+      "source": "npm:@eslint/eslintrc@3.3.7",
+      "target": "npm:import-fresh",
+      "type": "static"
+    },
+    {
+      "source": "npm:@eslint/eslintrc@3.3.7",
+      "target": "npm:js-yaml",
+      "type": "static"
+    },
+    {
+      "source": "npm:@eslint/eslintrc@3.3.7",
+      "target": "npm:minimatch@3.1.5",
+      "type": "static"
+    },
+    {
+      "source": "npm:@eslint/eslintrc@3.3.7",
       "target": "npm:strip-json-comments",
       "type": "static"
     },
@@ -424,6 +479,21 @@
     {
       "source": "npm:@humanfs/node",
       "target": "npm:@humanwhocodes/retry",
+      "type": "static"
+    },
+    {
+      "source": "npm:@humanwhocodes/config-array",
+      "target": "npm:@humanwhocodes/object-schema",
+      "type": "static"
+    },
+    {
+      "source": "npm:@humanwhocodes/config-array",
+      "target": "npm:debug",
+      "type": "static"
+    },
+    {
+      "source": "npm:@humanwhocodes/config-array",
+      "target": "npm:minimatch@3.1.5",
       "type": "static"
     },
     {
@@ -472,6 +542,31 @@
       "type": "static"
     },
     {
+      "source": "npm:@noble/curves",
+      "target": "npm:@noble/hashes",
+      "type": "static"
+    },
+    {
+      "source": "npm:@nodelib/fs.scandir",
+      "target": "npm:@nodelib/fs.stat",
+      "type": "static"
+    },
+    {
+      "source": "npm:@nodelib/fs.scandir",
+      "target": "npm:run-parallel",
+      "type": "static"
+    },
+    {
+      "source": "npm:@nodelib/fs.walk",
+      "target": "npm:@nodelib/fs.scandir",
+      "type": "static"
+    },
+    {
+      "source": "npm:@nodelib/fs.walk",
+      "target": "npm:fastq",
+      "type": "static"
+    },
+    {
       "source": "npm:@tailwindcss/node",
       "target": "npm:@jridgewell/remapping",
       "type": "static"
@@ -493,7 +588,7 @@
     },
     {
       "source": "npm:@tailwindcss/node",
-      "target": "npm:magic-string",
+      "target": "npm:magic-string@0.30.21",
       "type": "static"
     },
     {
@@ -588,7 +683,7 @@
     },
     {
       "source": "npm:@tybys/wasm-util",
-      "target": "npm:tslib",
+      "target": "npm:tslib@2.8.1",
       "type": "static"
     },
     {
@@ -637,6 +732,26 @@
       "type": "static"
     },
     {
+      "source": "npm:@types/chai",
+      "target": "npm:@types/deep-eql",
+      "type": "static"
+    },
+    {
+      "source": "npm:@types/chai",
+      "target": "npm:assertion-error",
+      "type": "static"
+    },
+    {
+      "source": "npm:@types/node@22.7.5",
+      "target": "npm:undici-types@6.19.8",
+      "type": "static"
+    },
+    {
+      "source": "npm:@types/node@26.6.5",
+      "target": "npm:undici-types@8.9.0",
+      "type": "static"
+    },
+    {
       "source": "npm:@types/react-dom",
       "target": "npm:@types/react",
       "type": "static"
@@ -678,6 +793,31 @@
     },
     {
       "source": "npm:@vitejs/plugin-react",
+      "target": "npm:vite",
+      "type": "static"
+    },
+    {
+      "source": "npm:@vitest/mocker",
+      "target": "npm:@jridgewell/trace-mapping",
+      "type": "static"
+    },
+    {
+      "source": "npm:@vitest/mocker",
+      "target": "npm:@vitest/spy",
+      "type": "static"
+    },
+    {
+      "source": "npm:@vitest/mocker",
+      "target": "npm:estree-walker",
+      "type": "static"
+    },
+    {
+      "source": "npm:@vitest/mocker",
+      "target": "npm:magic-string@1.4.3",
+      "type": "static"
+    },
+    {
+      "source": "npm:@vitest/mocker",
       "target": "npm:vite",
       "type": "static"
     },
@@ -862,6 +1002,11 @@
       "type": "static"
     },
     {
+      "source": "npm:doctrine",
+      "target": "npm:esutils",
+      "type": "static"
+    },
+    {
       "source": "npm:dotenv-expand",
       "target": "npm:dotenv",
       "type": "static"
@@ -1013,212 +1158,427 @@
     },
     {
       "source": "npm:eslint-plugin-react-hooks",
-      "target": "npm:eslint",
+      "target": "npm:eslint@9.39.5",
       "type": "static"
     },
     {
       "source": "npm:eslint-plugin-react-refresh",
-      "target": "npm:eslint",
+      "target": "npm:eslint@9.39.5",
       "type": "static"
     },
     {
-      "source": "npm:eslint-scope",
+      "source": "npm:eslint-scope@7.2.2",
       "target": "npm:esrecurse",
       "type": "static"
     },
     {
-      "source": "npm:eslint-scope",
+      "source": "npm:eslint-scope@7.2.2",
       "target": "npm:estraverse",
       "type": "static"
     },
     {
-      "source": "npm:eslint",
+      "source": "npm:eslint-scope@8.4.0",
+      "target": "npm:esrecurse",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint-scope@8.4.0",
+      "target": "npm:estraverse",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@8.57.1",
       "target": "npm:@eslint-community/eslint-utils",
       "type": "static"
     },
     {
-      "source": "npm:eslint",
+      "source": "npm:eslint@8.57.1",
       "target": "npm:@eslint-community/regexpp",
       "type": "static"
     },
     {
-      "source": "npm:eslint",
-      "target": "npm:@eslint/config-array",
+      "source": "npm:eslint@8.57.1",
+      "target": "npm:@eslint/eslintrc@2.1.4",
       "type": "static"
     },
     {
-      "source": "npm:eslint",
-      "target": "npm:@eslint/config-helpers",
+      "source": "npm:eslint@8.57.1",
+      "target": "npm:@eslint/js@8.57.1",
       "type": "static"
     },
     {
-      "source": "npm:eslint",
-      "target": "npm:@eslint/core",
+      "source": "npm:eslint@8.57.1",
+      "target": "npm:@humanwhocodes/config-array",
       "type": "static"
     },
     {
-      "source": "npm:eslint",
-      "target": "npm:@eslint/eslintrc",
-      "type": "static"
-    },
-    {
-      "source": "npm:eslint",
-      "target": "npm:@eslint/js",
-      "type": "static"
-    },
-    {
-      "source": "npm:eslint",
-      "target": "npm:@eslint/plugin-kit",
-      "type": "static"
-    },
-    {
-      "source": "npm:eslint",
-      "target": "npm:@humanfs/node",
-      "type": "static"
-    },
-    {
-      "source": "npm:eslint",
+      "source": "npm:eslint@8.57.1",
       "target": "npm:@humanwhocodes/module-importer",
       "type": "static"
     },
     {
-      "source": "npm:eslint",
-      "target": "npm:@humanwhocodes/retry",
+      "source": "npm:eslint@8.57.1",
+      "target": "npm:@nodelib/fs.walk",
       "type": "static"
     },
     {
-      "source": "npm:eslint",
-      "target": "npm:@types/estree",
+      "source": "npm:eslint@8.57.1",
+      "target": "npm:@ungap/structured-clone",
       "type": "static"
     },
     {
-      "source": "npm:eslint",
+      "source": "npm:eslint@8.57.1",
       "target": "npm:ajv",
       "type": "static"
     },
     {
-      "source": "npm:eslint",
+      "source": "npm:eslint@8.57.1",
       "target": "npm:chalk",
       "type": "static"
     },
     {
-      "source": "npm:eslint",
+      "source": "npm:eslint@8.57.1",
       "target": "npm:cross-spawn",
       "type": "static"
     },
     {
-      "source": "npm:eslint",
+      "source": "npm:eslint@8.57.1",
       "target": "npm:debug",
       "type": "static"
     },
     {
-      "source": "npm:eslint",
+      "source": "npm:eslint@8.57.1",
+      "target": "npm:doctrine",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@8.57.1",
       "target": "npm:escape-string-regexp@4.0.0",
       "type": "static"
     },
     {
-      "source": "npm:eslint",
-      "target": "npm:eslint-scope",
+      "source": "npm:eslint@8.57.1",
+      "target": "npm:eslint-scope@7.2.2",
       "type": "static"
     },
     {
-      "source": "npm:eslint",
-      "target": "npm:eslint-visitor-keys@4.2.1",
+      "source": "npm:eslint@8.57.1",
+      "target": "npm:eslint-visitor-keys@3.4.3",
       "type": "static"
     },
     {
-      "source": "npm:eslint",
-      "target": "npm:espree",
+      "source": "npm:eslint@8.57.1",
+      "target": "npm:espree@9.6.1",
       "type": "static"
     },
     {
-      "source": "npm:eslint",
+      "source": "npm:eslint@8.57.1",
       "target": "npm:esquery",
       "type": "static"
     },
     {
-      "source": "npm:eslint",
+      "source": "npm:eslint@8.57.1",
       "target": "npm:esutils",
       "type": "static"
     },
     {
-      "source": "npm:eslint",
+      "source": "npm:eslint@8.57.1",
       "target": "npm:fast-deep-equal",
       "type": "static"
     },
     {
-      "source": "npm:eslint",
-      "target": "npm:file-entry-cache",
+      "source": "npm:eslint@8.57.1",
+      "target": "npm:file-entry-cache@6.0.1",
       "type": "static"
     },
     {
-      "source": "npm:eslint",
+      "source": "npm:eslint@8.57.1",
       "target": "npm:find-up",
       "type": "static"
     },
     {
-      "source": "npm:eslint",
+      "source": "npm:eslint@8.57.1",
       "target": "npm:glob-parent",
       "type": "static"
     },
     {
-      "source": "npm:eslint",
+      "source": "npm:eslint@8.57.1",
+      "target": "npm:globals@13.24.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@8.57.1",
+      "target": "npm:graphemer",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@8.57.1",
       "target": "npm:ignore@5.3.2",
       "type": "static"
     },
     {
-      "source": "npm:eslint",
+      "source": "npm:eslint@8.57.1",
       "target": "npm:imurmurhash",
       "type": "static"
     },
     {
-      "source": "npm:eslint",
+      "source": "npm:eslint@8.57.1",
       "target": "npm:is-glob",
       "type": "static"
     },
     {
-      "source": "npm:eslint",
+      "source": "npm:eslint@8.57.1",
+      "target": "npm:is-path-inside",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@8.57.1",
+      "target": "npm:js-yaml",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@8.57.1",
       "target": "npm:json-stable-stringify-without-jsonify",
       "type": "static"
     },
     {
-      "source": "npm:eslint",
+      "source": "npm:eslint@8.57.1",
+      "target": "npm:levn",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@8.57.1",
       "target": "npm:lodash.merge",
       "type": "static"
     },
     {
-      "source": "npm:eslint",
+      "source": "npm:eslint@8.57.1",
       "target": "npm:minimatch@3.1.5",
       "type": "static"
     },
     {
-      "source": "npm:eslint",
+      "source": "npm:eslint@8.57.1",
       "target": "npm:natural-compare",
       "type": "static"
     },
     {
-      "source": "npm:eslint",
+      "source": "npm:eslint@8.57.1",
       "target": "npm:optionator",
       "type": "static"
     },
     {
-      "source": "npm:eslint",
+      "source": "npm:eslint@8.57.1",
+      "target": "npm:strip-ansi",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@8.57.1",
+      "target": "npm:text-table",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:@eslint-community/eslint-utils",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:@eslint-community/regexpp",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:@eslint/config-array",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:@eslint/config-helpers",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:@eslint/core",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:@eslint/eslintrc@3.3.7",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:@eslint/js@9.39.5",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:@eslint/plugin-kit",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:@humanfs/node",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:@humanwhocodes/module-importer",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:@humanwhocodes/retry",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:@types/estree",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:ajv",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:chalk",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:cross-spawn",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:debug",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:escape-string-regexp@4.0.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:eslint-scope@8.4.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:eslint-visitor-keys@4.2.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:espree@10.4.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:esquery",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:esutils",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:fast-deep-equal",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:file-entry-cache@8.0.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:find-up",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:glob-parent",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:ignore@5.3.2",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:imurmurhash",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:is-glob",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:json-stable-stringify-without-jsonify",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:lodash.merge",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:minimatch@3.1.5",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:natural-compare",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
+      "target": "npm:optionator",
+      "type": "static"
+    },
+    {
+      "source": "npm:eslint@9.39.5",
       "target": "npm:jiti",
       "type": "static"
     },
     {
-      "source": "npm:espree",
+      "source": "npm:espree@10.4.0",
       "target": "npm:acorn",
       "type": "static"
     },
     {
-      "source": "npm:espree",
+      "source": "npm:espree@10.4.0",
       "target": "npm:acorn-jsx",
       "type": "static"
     },
     {
-      "source": "npm:espree",
+      "source": "npm:espree@10.4.0",
       "target": "npm:eslint-visitor-keys@4.2.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:espree@9.6.1",
+      "target": "npm:acorn",
+      "type": "static"
+    },
+    {
+      "source": "npm:espree@9.6.1",
+      "target": "npm:acorn-jsx",
+      "type": "static"
+    },
+    {
+      "source": "npm:espree@9.6.1",
+      "target": "npm:eslint-visitor-keys@3.4.3",
       "type": "static"
     },
     {
@@ -1232,6 +1592,46 @@
       "type": "static"
     },
     {
+      "source": "npm:estree-walker",
+      "target": "npm:@types/estree",
+      "type": "static"
+    },
+    {
+      "source": "npm:ethers",
+      "target": "npm:@adraffy/ens-normalize",
+      "type": "static"
+    },
+    {
+      "source": "npm:ethers",
+      "target": "npm:@noble/curves",
+      "type": "static"
+    },
+    {
+      "source": "npm:ethers",
+      "target": "npm:@noble/hashes",
+      "type": "static"
+    },
+    {
+      "source": "npm:ethers",
+      "target": "npm:@types/node@22.7.5",
+      "type": "static"
+    },
+    {
+      "source": "npm:ethers",
+      "target": "npm:aes-js",
+      "type": "static"
+    },
+    {
+      "source": "npm:ethers",
+      "target": "npm:tslib@2.7.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:ethers",
+      "target": "npm:ws",
+      "type": "static"
+    },
+    {
       "source": "npm:fast-string-width",
       "target": "npm:fast-string-truncated-width",
       "type": "static"
@@ -1239,6 +1639,11 @@
     {
       "source": "npm:fast-wrap-ansi",
       "target": "npm:fast-string-width",
+      "type": "static"
+    },
+    {
+      "source": "npm:fastq",
+      "target": "npm:reusify",
       "type": "static"
     },
     {
@@ -1252,8 +1657,13 @@
       "type": "static"
     },
     {
-      "source": "npm:file-entry-cache",
-      "target": "npm:flat-cache",
+      "source": "npm:file-entry-cache@6.0.1",
+      "target": "npm:flat-cache@3.2.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:file-entry-cache@8.0.0",
+      "target": "npm:flat-cache@4.0.1",
       "type": "static"
     },
     {
@@ -1267,18 +1677,68 @@
       "type": "static"
     },
     {
-      "source": "npm:flat-cache",
+      "source": "npm:flat-cache@3.2.0",
       "target": "npm:flatted",
       "type": "static"
     },
     {
-      "source": "npm:flat-cache",
+      "source": "npm:flat-cache@3.2.0",
+      "target": "npm:keyv",
+      "type": "static"
+    },
+    {
+      "source": "npm:flat-cache@3.2.0",
+      "target": "npm:rimraf",
+      "type": "static"
+    },
+    {
+      "source": "npm:flat-cache@4.0.1",
+      "target": "npm:flatted",
+      "type": "static"
+    },
+    {
+      "source": "npm:flat-cache@4.0.1",
       "target": "npm:keyv",
       "type": "static"
     },
     {
       "source": "npm:glob-parent",
       "target": "npm:is-glob",
+      "type": "static"
+    },
+    {
+      "source": "npm:glob",
+      "target": "npm:fs.realpath",
+      "type": "static"
+    },
+    {
+      "source": "npm:glob",
+      "target": "npm:inflight",
+      "type": "static"
+    },
+    {
+      "source": "npm:glob",
+      "target": "npm:inherits",
+      "type": "static"
+    },
+    {
+      "source": "npm:glob",
+      "target": "npm:minimatch@3.1.5",
+      "type": "static"
+    },
+    {
+      "source": "npm:glob",
+      "target": "npm:once",
+      "type": "static"
+    },
+    {
+      "source": "npm:glob",
+      "target": "npm:path-is-absolute",
+      "type": "static"
+    },
+    {
+      "source": "npm:globals@13.24.0",
+      "target": "npm:type-fest",
       "type": "static"
     },
     {
@@ -1289,6 +1749,16 @@
     {
       "source": "npm:import-fresh",
       "target": "npm:resolve-from",
+      "type": "static"
+    },
+    {
+      "source": "npm:inflight",
+      "target": "npm:once",
+      "type": "static"
+    },
+    {
+      "source": "npm:inflight",
+      "target": "npm:wrappy",
       "type": "static"
     },
     {
@@ -1407,7 +1877,12 @@
       "type": "static"
     },
     {
-      "source": "npm:magic-string",
+      "source": "npm:magic-string@0.30.21",
+      "target": "npm:@jridgewell/sourcemap-codec",
+      "type": "static"
+    },
+    {
+      "source": "npm:magic-string@1.4.3",
       "target": "npm:@jridgewell/sourcemap-codec",
       "type": "static"
     },
@@ -1858,7 +2333,7 @@
     },
     {
       "source": "npm:nx",
-      "target": "npm:tslib",
+      "target": "npm:tslib@2.8.1",
       "type": "static"
     },
     {
@@ -2132,6 +2607,11 @@
       "type": "static"
     },
     {
+      "source": "npm:rimraf",
+      "target": "npm:glob",
+      "type": "static"
+    },
+    {
       "source": "npm:rollup",
       "target": "npm:@types/estree",
       "type": "static"
@@ -2272,6 +2752,11 @@
       "type": "static"
     },
     {
+      "source": "npm:run-parallel",
+      "target": "npm:queue-microtask",
+      "type": "static"
+    },
+    {
       "source": "npm:shebang-command",
       "target": "npm:shebang-regex",
       "type": "static"
@@ -2362,6 +2847,106 @@
       "type": "static"
     },
     {
+      "source": "npm:typescript",
+      "target": "npm:@typescript/typescript-aix-ppc64",
+      "type": "static"
+    },
+    {
+      "source": "npm:typescript",
+      "target": "npm:@typescript/typescript-darwin-arm64",
+      "type": "static"
+    },
+    {
+      "source": "npm:typescript",
+      "target": "npm:@typescript/typescript-darwin-x64",
+      "type": "static"
+    },
+    {
+      "source": "npm:typescript",
+      "target": "npm:@typescript/typescript-freebsd-arm64",
+      "type": "static"
+    },
+    {
+      "source": "npm:typescript",
+      "target": "npm:@typescript/typescript-freebsd-x64",
+      "type": "static"
+    },
+    {
+      "source": "npm:typescript",
+      "target": "npm:@typescript/typescript-linux-arm",
+      "type": "static"
+    },
+    {
+      "source": "npm:typescript",
+      "target": "npm:@typescript/typescript-linux-arm64",
+      "type": "static"
+    },
+    {
+      "source": "npm:typescript",
+      "target": "npm:@typescript/typescript-linux-loong64",
+      "type": "static"
+    },
+    {
+      "source": "npm:typescript",
+      "target": "npm:@typescript/typescript-linux-mips64el",
+      "type": "static"
+    },
+    {
+      "source": "npm:typescript",
+      "target": "npm:@typescript/typescript-linux-ppc64",
+      "type": "static"
+    },
+    {
+      "source": "npm:typescript",
+      "target": "npm:@typescript/typescript-linux-riscv64",
+      "type": "static"
+    },
+    {
+      "source": "npm:typescript",
+      "target": "npm:@typescript/typescript-linux-s390x",
+      "type": "static"
+    },
+    {
+      "source": "npm:typescript",
+      "target": "npm:@typescript/typescript-linux-x64",
+      "type": "static"
+    },
+    {
+      "source": "npm:typescript",
+      "target": "npm:@typescript/typescript-netbsd-arm64",
+      "type": "static"
+    },
+    {
+      "source": "npm:typescript",
+      "target": "npm:@typescript/typescript-netbsd-x64",
+      "type": "static"
+    },
+    {
+      "source": "npm:typescript",
+      "target": "npm:@typescript/typescript-openbsd-arm64",
+      "type": "static"
+    },
+    {
+      "source": "npm:typescript",
+      "target": "npm:@typescript/typescript-openbsd-x64",
+      "type": "static"
+    },
+    {
+      "source": "npm:typescript",
+      "target": "npm:@typescript/typescript-sunos-x64",
+      "type": "static"
+    },
+    {
+      "source": "npm:typescript",
+      "target": "npm:@typescript/typescript-win32-arm64",
+      "type": "static"
+    },
+    {
+      "source": "npm:typescript",
+      "target": "npm:@typescript/typescript-win32-x64",
+      "type": "static"
+    },
+    {
       "source": "npm:update-browserslist-db",
       "target": "npm:browserslist",
       "type": "static"
@@ -2413,6 +2998,11 @@
     },
     {
       "source": "npm:vite",
+      "target": "npm:@types/node@26.6.5",
+      "type": "static"
+    },
+    {
+      "source": "npm:vite",
       "target": "npm:fsevents",
       "type": "static"
     },
@@ -2429,6 +3019,81 @@
     {
       "source": "npm:vite",
       "target": "npm:yaml",
+      "type": "static"
+    },
+    {
+      "source": "npm:vitest",
+      "target": "npm:@types/chai",
+      "type": "static"
+    },
+    {
+      "source": "npm:vitest",
+      "target": "npm:@vitest/mocker",
+      "type": "static"
+    },
+    {
+      "source": "npm:vitest",
+      "target": "npm:chai",
+      "type": "static"
+    },
+    {
+      "source": "npm:vitest",
+      "target": "npm:es-module-lexer",
+      "type": "static"
+    },
+    {
+      "source": "npm:vitest",
+      "target": "npm:expect-type",
+      "type": "static"
+    },
+    {
+      "source": "npm:vitest",
+      "target": "npm:magic-string@1.4.3",
+      "type": "static"
+    },
+    {
+      "source": "npm:vitest",
+      "target": "npm:obug",
+      "type": "static"
+    },
+    {
+      "source": "npm:vitest",
+      "target": "npm:picomatch",
+      "type": "static"
+    },
+    {
+      "source": "npm:vitest",
+      "target": "npm:std-env",
+      "type": "static"
+    },
+    {
+      "source": "npm:vitest",
+      "target": "npm:tinybench",
+      "type": "static"
+    },
+    {
+      "source": "npm:vitest",
+      "target": "npm:tinyexec",
+      "type": "static"
+    },
+    {
+      "source": "npm:vitest",
+      "target": "npm:tinyglobby",
+      "type": "static"
+    },
+    {
+      "source": "npm:vitest",
+      "target": "npm:vite",
+      "type": "static"
+    },
+    {
+      "source": "npm:vitest",
+      "target": "npm:why-is-node-running",
+      "type": "static"
+    },
+    {
+      "source": "npm:vitest",
+      "target": "npm:@types/node@26.6.5",
       "type": "static"
     },
     {
