@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "compilerOptions": {
         "target": "ES2020",
         "module": "NodeNext",
@@ -10,3 +11,17 @@
         "resolveJsonModule": true
     }
 }
+=======
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "allowArbitraryExtensions": true
+  }
+}
+>>>>>>> origin/feature/transferEth-smartContract
