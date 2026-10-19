@@ -37,6 +37,11 @@ jobs:
       - name: Install Monorepo Dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Initialize Nx Affected Tracking
+        uses: nrwl/nx-set-shas@v4
+        with:
+          main-branch: main
+
       - name: Run Testing Matrix
         run: pnpm nx affected -t test
 
