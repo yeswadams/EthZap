@@ -21,8 +21,16 @@
         "hash": "17889316721918184422"
       },
       {
-        "file": "pnpm-lock.yaml",
-        "hash": "5134312289021476873"
+        "file": "tsconfig.base.json",
+        "hash": "17291424813197917762"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "12473768527629685971"
+      },
+      {
+        "file": "package.json",
+        "hash": "12756930498009781262"
       },
       {
         "file": ".gitignore",
@@ -37,20 +45,12 @@
         "hash": "6886617028045283950"
       },
       {
-        "file": "pnpm-workspace.yaml",
-        "hash": "12473768527629685971"
-      },
-      {
-        "file": "package.json",
-        "hash": "12756930498009781262"
-      },
-      {
         "file": "README.md",
         "hash": "14463556237835125531"
       },
       {
-        "file": "tsconfig.base.json",
-        "hash": "17291424813197917762"
+        "file": "pnpm-lock.yaml",
+        "hash": "5134312289021476873"
       }
     ],
     "projectFileMap": {
@@ -437,8 +437,8 @@
           "hash": "3244421341483603138"
         },
         {
-          "file": "apps/client/src/App.jsx",
-          "hash": "4675610827104694967"
+          "file": "apps/client/src/App.tsx",
+          "hash": "11292398660313339537"
         },
         {
           "file": "apps/client/src/assets/react.svg",
