@@ -51,12 +51,17 @@ jobs:
 
       - name: Enforce Code Style (Lint Changed Only)
         run: pnpm nx affected -t lint
+        env:
+          NX_REJECT_UNKNOWN_LOCAL_CACHE: 0
 
       - name: Run Testing Matrix (Includes Anvil Fork Tests)
         run: pnpm nx affected -t test
         env:
           MAINNET_RPC_URL: ${{ secrets.MAINNET_RPC_URL }}
           TESTNET_RPC_URL: ${{ secrets.TESTNET_RPC_URL }}
+          NX_REJECT_UNKNOWN_LOCAL_CACHE: 0
 
       - name: Validate Production Compilation (Build Changed Only)
         run: pnpm nx affected -t build
+        env:
+          NX_REJECT_UNKNOWN_LOCAL_CACHE: 0
