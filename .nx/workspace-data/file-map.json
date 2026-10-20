@@ -18,7 +18,7 @@
     "nonProjectFiles": [
       {
         "file": ".github/workflows/ci.yaml",
-        "hash": "9441829115109706500"
+        "hash": "3811303545900387561"
       },
       {
         "file": ".gitignore",
@@ -173,7 +173,7 @@
         },
         {
           "file": "packages/web3/package.json",
-          "hash": "10836107580767881024",
+          "hash": "7270098608628421072",
           "deps": [
             "npm:@types/node@26.6.5",
             "npm:eslint@8.57.1",
@@ -515,7 +515,7 @@
         },
         {
           "file": "packages/contracts/package.json",
-          "hash": "1045906335478162482",
+          "hash": "12829619292106736407",
           "deps": [
             "npm:@types/node@26.6.5",
             "npm:vitest",
@@ -524,7 +524,7 @@
         },
         {
           "file": "packages/contracts/src/TransferRouter.sol",
-          "hash": "11342444982758120518"
+          "hash": "13735029790088212038"
         },
         {
           "file": "packages/contracts/test/TransferRouter.t.sol",

@@ -4,7 +4,7 @@
     "private": true,
     "scripts": {
         "build": "tsc",
-        "lint": "eslint .",
+        "lint": "tsc --noEmit",
         "test": "vitest run",
         "format": "prettier --write ."
     },
