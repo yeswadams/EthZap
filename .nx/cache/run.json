@@ -1,43 +1,43 @@
 {
   "run": {
-    "command": "nx run-many -t test",
-    "startTime": "2026-10-20T06:49:07.767Z",
-    "endTime": "2026-10-20T06:49:12.331Z",
+    "command": "nx run-many -t lint",
+    "startTime": "2026-10-20T07:27:50.643Z",
+    "endTime": "2026-10-20T07:27:50.930Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "@app/contracts:test",
-      "target": "test",
-      "projectName": "@app/contracts",
-      "hash": "1872445986883942607",
-      "startTime": "2026-10-20T06:49:07.780Z",
-      "endTime": "2026-10-20T06:49:08.558Z",
+      "taskId": "@app/web3:lint",
+      "target": "lint",
+      "projectName": "@app/web3",
+      "hash": "4158811721022793234",
+      "startTime": "2026-10-20T07:27:50.684Z",
+      "endTime": "2026-10-20T07:27:50.705Z",
       "params": "",
-      "cacheStatus": "cache-miss",
+      "cacheStatus": "local-cache-hit",
       "status": 0
     },
     {
-      "taskId": "@app/client:test",
-      "target": "test",
+      "taskId": "@app/client:lint",
+      "target": "lint",
       "projectName": "@app/client",
-      "hash": "4782965441921502008",
-      "startTime": "2026-10-20T06:49:07.780Z",
-      "endTime": "2026-10-20T06:49:09.038Z",
+      "hash": "17168150030561506244",
+      "startTime": "2026-10-20T07:27:50.685Z",
+      "endTime": "2026-10-20T07:27:50.706Z",
       "params": "",
-      "cacheStatus": "cache-miss",
-      "status": 1
+      "cacheStatus": "local-cache-hit",
+      "status": 0
     },
     {
-      "taskId": "@app/web3:test",
-      "target": "test",
-      "projectName": "@app/web3",
-      "hash": "12825426964055947260",
-      "startTime": "2026-10-20T06:49:07.779Z",
-      "endTime": "2026-10-20T06:49:12.330Z",
+      "taskId": "@app/contracts:lint",
+      "target": "lint",
+      "projectName": "@app/contracts",
+      "hash": "9590397103992442037",
+      "startTime": "2026-10-20T07:27:50.685Z",
+      "endTime": "2026-10-20T07:27:50.929Z",
       "params": "",
       "cacheStatus": "cache-miss",
-      "status": 1
+      "status": 0
     }
   ]
 }

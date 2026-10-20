@@ -14,8 +14,8 @@
           "targetGroups": {
             "NPM Scripts": [
               "build",
-              "lint",
               "test",
+              "lint",
               "format"
             ]
           }
@@ -41,19 +41,6 @@
             ],
             "cache": true
           },
-          "lint": {
-            "executor": "nx:run-script",
-            "options": {
-              "script": "lint"
-            },
-            "metadata": {
-              "scriptContent": "eslint .",
-              "runCommand": "pnpm run lint"
-            },
-            "configurations": {},
-            "parallelism": true,
-            "cache": true
-          },
           "test": {
             "executor": "nx:run-script",
             "options": {
@@ -62,6 +49,19 @@
             "metadata": {
               "scriptContent": "forge test",
               "runCommand": "pnpm run test"
+            },
+            "configurations": {},
+            "parallelism": true,
+            "cache": true
+          },
+          "lint": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "lint"
+            },
+            "metadata": {
+              "scriptContent": "forge fmt --check",
+              "runCommand": "pnpm run lint"
             },
             "configurations": {},
             "parallelism": true,
@@ -130,7 +130,7 @@
               "script": "lint"
             },
             "metadata": {
-              "scriptContent": "eslint .",
+              "scriptContent": "tsc --noEmit",
               "runCommand": "pnpm run lint"
             },
             "configurations": {},
