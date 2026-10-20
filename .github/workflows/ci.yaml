@@ -37,13 +37,8 @@ jobs:
       - name: Install Monorepo Dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Initialize Nx Affected Tracking
-        uses: nrwl/nx-set-shas@v4
-        with:
-          main-branch: main
-
-      - name: Run Testing Matrix
-        run: pnpm nx affected -t test
+      - name: Reset Cache Directory State
+        run: pnpm nx reset
 
       # Derives SHAs for Nx Affected execution comparison
       - name: Initialize Nx Affected Tracking
@@ -57,6 +52,7 @@ jobs:
         env:
           MAINNET_RPC_URL: ${{ secrets.MAINNET_RPC_URL }}
           TESTNET_RPC_URL: ${{ secrets.TESTNET_RPC_URL }}
+          NX_REJECT_UNKNOWN_LOCAL_CACHE: 0
 
       - name: Validate Production Compilation (Build Changed Only)
         run: pnpm nx affected -t build
