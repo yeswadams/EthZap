@@ -1,40 +1,18 @@
 {
   "run": {
-    "command": "nx run-many -t test",
-    "startTime": "2026-10-20T07:35:04.469Z",
-    "endTime": "2026-10-20T07:35:07.556Z",
+    "command": "nx run @app/web3:test --skip-nx-cache",
+    "startTime": "2026-10-20T08:56:42.029Z",
+    "endTime": "2026-10-20T08:56:43.830Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "@app/client:test",
-      "target": "test",
-      "projectName": "@app/client",
-      "hash": "1931952095548319993",
-      "startTime": "2026-10-20T07:35:04.529Z",
-      "endTime": "2026-10-20T07:35:05.465Z",
-      "params": "",
-      "cacheStatus": "cache-miss",
-      "status": 0
-    },
-    {
       "taskId": "@app/web3:test",
       "target": "test",
       "projectName": "@app/web3",
-      "hash": "247404440617934196",
-      "startTime": "2026-10-20T07:35:04.529Z",
-      "endTime": "2026-10-20T07:35:06.772Z",
-      "params": "",
-      "cacheStatus": "cache-miss",
-      "status": 1
-    },
-    {
-      "taskId": "@app/contracts:test",
-      "target": "test",
-      "projectName": "@app/contracts",
-      "hash": "5183788367727985766",
-      "startTime": "2026-10-20T07:35:04.530Z",
-      "endTime": "2026-10-20T07:35:07.555Z",
+      "hash": "3387538017377265735",
+      "startTime": "2026-10-20T08:56:42.065Z",
+      "endTime": "2026-10-20T08:56:43.830Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0

@@ -73,11 +73,11 @@
         },
         {
           "file": "packages/web3/src/index.ts",
-          "hash": "13856112318259557513"
+          "hash": "16928945666901587686"
         },
         {
           "file": "packages/web3/src/intergration.test.ts",
-          "hash": "2628650934426441760"
+          "hash": "13872515038158082238"
         },
         {
           "file": "packages/web3/tsconfig.json",
