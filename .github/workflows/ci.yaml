@@ -37,14 +37,15 @@ jobs:
       - name: Install Monorepo Dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Reset Cache Directory State
+        run: pnpm nx reset
+
       # Derives SHAs for Nx Affected execution comparison
       - name: Initialize Nx Affected Tracking
         uses: nrwl/nx-set-shas@v4
 
       - name: Enforce Code Style (Lint Changed Only)
         run: pnpm nx affected -t lint
-        env:
-          NX_REJECT_UNKNOWN_LOCAL_CACHE: 0
 
       - name: Run Testing Matrix (Includes Anvil Fork Tests)
         run: pnpm nx affected -t test
@@ -55,5 +56,3 @@ jobs:
 
       - name: Validate Production Compilation (Build Changed Only)
         run: pnpm nx affected -t build
-        env:
-          NX_REJECT_UNKNOWN_LOCAL_CACHE: 0
