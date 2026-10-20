@@ -239,7 +239,7 @@
               "script": "test"
             },
             "metadata": {
-              "scriptContent": "vitest run",
+              "scriptContent": "vitest run --passWithNoTests",
               "runCommand": "pnpm run test"
             },
             "configurations": {},
