@@ -1,9 +1,0 @@
-$ forge test
-No files changed, compilation skipped
-
-Ran 2 tests for test/TransferRouter.t.sol:TransferRouterTest
-[PASS] test_BatchTransferSuccess() (gas: 118053)
-[PASS] test_RevertOnLengthMismatch() (gas: 46246)
-Suite result: ok. 2 passed; 0 failed; 0 skipped; finished in 190.11ms (44.25ms CPU time)
-
-Ran 1 test suite in 202.74ms (190.11ms CPU time): 2 tests passed, 0 failed, 0 skipped (2 total tests)

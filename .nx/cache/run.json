@@ -1,40 +1,40 @@
 {
   "run": {
-    "command": "nx run-many -t lint",
-    "startTime": "2026-10-20T07:27:50.643Z",
-    "endTime": "2026-10-20T07:27:50.930Z",
+    "command": "nx run-many -t test",
+    "startTime": "2026-10-20T07:35:04.469Z",
+    "endTime": "2026-10-20T07:35:07.556Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "@app/web3:lint",
-      "target": "lint",
-      "projectName": "@app/web3",
-      "hash": "4158811721022793234",
-      "startTime": "2026-10-20T07:27:50.684Z",
-      "endTime": "2026-10-20T07:27:50.705Z",
-      "params": "",
-      "cacheStatus": "local-cache-hit",
-      "status": 0
-    },
-    {
-      "taskId": "@app/client:lint",
-      "target": "lint",
+      "taskId": "@app/client:test",
+      "target": "test",
       "projectName": "@app/client",
-      "hash": "17168150030561506244",
-      "startTime": "2026-10-20T07:27:50.685Z",
-      "endTime": "2026-10-20T07:27:50.706Z",
+      "hash": "1931952095548319993",
+      "startTime": "2026-10-20T07:35:04.529Z",
+      "endTime": "2026-10-20T07:35:05.465Z",
       "params": "",
-      "cacheStatus": "local-cache-hit",
+      "cacheStatus": "cache-miss",
       "status": 0
     },
     {
-      "taskId": "@app/contracts:lint",
-      "target": "lint",
+      "taskId": "@app/web3:test",
+      "target": "test",
+      "projectName": "@app/web3",
+      "hash": "247404440617934196",
+      "startTime": "2026-10-20T07:35:04.529Z",
+      "endTime": "2026-10-20T07:35:06.772Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    },
+    {
+      "taskId": "@app/contracts:test",
+      "target": "test",
       "projectName": "@app/contracts",
-      "hash": "9590397103992442037",
-      "startTime": "2026-10-20T07:27:50.685Z",
-      "endTime": "2026-10-20T07:27:50.929Z",
+      "hash": "5183788367727985766",
+      "startTime": "2026-10-20T07:35:04.530Z",
+      "endTime": "2026-10-20T07:35:07.555Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
