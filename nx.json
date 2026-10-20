@@ -2,8 +2,13 @@
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "targetDefaults": {
     "build": {
-      "dependsOn": ["^build"],
-      "outputs": ["{projectRoot}/dist", "{projectRoot}/.next"],
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        "{projectRoot}/dist",
+        "{projectRoot}/out"
+      ],
       "cache": true
     },
     "lint": {
@@ -12,5 +17,6 @@
     "test": {
       "cache": true
     }
-  }
+  },
+  "analytics": false
 }
