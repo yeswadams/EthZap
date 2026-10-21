@@ -6,25 +6,16 @@ import TransferRouterArtifact from "../../contracts/out/TransferRouter.sol/Trans
 
 const ANVIL_PORT = 18545;
 const LOCAL_RPC_URL = `http://127.0.0.1:${ANVIL_PORT}`;
-const FORK_BLOCK = 20_000_000;
 const CHAIN_ID = 31337;
 const STARTUP_TIMEOUT_MS = 30_000;
 
-describe("Web3 Contract Fork Integration Tests", () => {
+describe("Web3 Contract Integration Tests", () => {
   let anvilProcess: ChildProcess | undefined;
   let provider: ethers.JsonRpcProvider | undefined;
-  let deployerWallet: ethers.Wallet;
+  let deployerWallet: ethers.NonceManager;
   let contractAddress: string;
 
   beforeAll(async () => {
-    const rpcUrl = process.env.MAINNET_RPC_URL;
-
-    if (!rpcUrl) {
-      throw new Error(
-        "MAINNET_RPC_URL is required. Set it to a valid Ethereum Mainnet RPC endpoint.",
-      );
-    }
-
     anvilProcess = spawn(
       "anvil",
       [
@@ -32,10 +23,6 @@ describe("Web3 Contract Fork Integration Tests", () => {
         "127.0.0.1",
         "--port",
         String(ANVIL_PORT),
-        "--fork-url",
-        rpcUrl,
-        "--fork-block-number",
-        String(FORK_BLOCK),
         "--chain-id",
         String(CHAIN_ID),
       ],
@@ -60,6 +47,8 @@ describe("Web3 Contract Fork Integration Tests", () => {
 
     provider = new ethers.JsonRpcProvider(LOCAL_RPC_URL, CHAIN_ID, {
       staticNetwork: true,
+      // Read the latest mined state immediately after a transaction receipt.
+      cacheTimeout: -1,
     });
 
     const deadline = Date.now() + STARTUP_TIMEOUT_MS;
@@ -98,7 +87,11 @@ describe("Web3 Contract Fork Integration Tests", () => {
     const defaultAnvilPrivateKey =
       "0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80";
 
-    deployerWallet = new ethers.Wallet(defaultAnvilPrivateKey, provider);
+    // Keep a single nonce sequence across deployment and subsequent test calls.
+    // JsonRpcProvider's pending nonce can briefly lag behind a just-mined tx.
+    deployerWallet = new ethers.NonceManager(
+      new ethers.Wallet(defaultAnvilPrivateKey, provider),
+    );
 
     const factory = new ethers.ContractFactory(
       TransferRouterArtifact.abi,
@@ -155,6 +148,7 @@ describe("Web3 Contract Fork Integration Tests", () => {
     );
 
     expect(receipt).not.toBeNull();
+    expect(receipt!.status).toBe(1);
 
     expect(await provider.getBalance(aliceAddress)).toBe(
       ethers.parseEther("2.5"),

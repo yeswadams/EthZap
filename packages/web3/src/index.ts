@@ -1,4 +1,4 @@
-import { assert, ethers } from "ethers";
+import { ethers } from "ethers";
 import TransferRouterArtifact from "../../contracts/out/TransferRouter.sol/TransferRouter.json";
 
 // Interface rep the std payload structure
