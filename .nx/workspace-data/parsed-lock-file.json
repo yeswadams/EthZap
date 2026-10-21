@@ -3042,6 +3042,15 @@
         "hash": "sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w=="
       }
     },
+    "npm:lucide-react": {
+      "type": "npm",
+      "name": "npm:lucide-react",
+      "data": {
+        "version": "1.60.0",
+        "packageName": "lucide-react",
+        "hash": "sha512-UqxOW0FgAfDyb9VmjKb6/BkOzW6yfhf/QNboKtS2NDsscnNRW2CDzlyhbMKBQ1ontmcxuIDqHJ2AVgFR3NI+GA=="
+      }
+    },
     "npm:magic-string@0.30.21": {
       "type": "npm",
       "name": "npm:magic-string@0.30.21",
@@ -6035,6 +6044,16 @@
     {
       "source": "npm:lru-cache",
       "target": "npm:yallist",
+      "type": "static"
+    },
+    {
+      "source": "npm:lucide-react",
+      "target": "npm:react",
+      "type": "static"
+    },
+    {
+      "source": "npm:lucide-react",
+      "target": "npm:@types/react",
       "type": "static"
     },
     {

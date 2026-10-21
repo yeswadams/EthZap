@@ -1,18 +1,18 @@
 {
   "run": {
-    "command": "nx run @app/web3:test --skip-nx-cache",
-    "startTime": "2026-10-20T08:56:42.029Z",
-    "endTime": "2026-10-20T08:56:43.830Z",
+    "command": "nx affected -t lint",
+    "startTime": "2026-10-21T13:35:19.009Z",
+    "endTime": "2026-10-21T13:35:19.416Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "@app/web3:test",
-      "target": "test",
-      "projectName": "@app/web3",
-      "hash": "3387538017377265735",
-      "startTime": "2026-10-20T08:56:42.065Z",
-      "endTime": "2026-10-20T08:56:43.830Z",
+      "taskId": "@app/contracts:lint",
+      "target": "lint",
+      "projectName": "@app/contracts",
+      "hash": "14391838832409175495",
+      "startTime": "2026-10-21T13:35:19.032Z",
+      "endTime": "2026-10-21T13:35:19.416Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
