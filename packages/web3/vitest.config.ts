@@ -2,9 +2,9 @@ import { defineConfig } from "vitest/config";
 
 export default defineConfig({
   test: {
-    include: ["src/**/*.{test,spec}.?(c|m)[jt]s?(x)"],
-    exclude: ["**/node_modules/**", "**/.git/**", "dist/**", "out/**"],
-    testTimeout: 30_000,
-    hookTimeout: 45_000,
+    // Explicitly exclude build directories from being picked up as tests
+    exclude: ["**/node_modules/**", "**/dist/**", "**/.git/**"],
+    // Ensure it only runs your true source code files
+    include: ["src/**/*.{test,spec}.ts"],
   },
 });

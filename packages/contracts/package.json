@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "build": "forge build",
-    "lint": "eslint .",
     "test": "forge test",
+    "lint": "forge fmt --check",
     "format": "forge fmt"
   },
   "devDependencies": {
