@@ -10,8 +10,7 @@ contract DeployTransferRouter is Script {
     function run() external returns (TransferRouter router) {
         require(block.chainid == SEPOLIA_CHAIN_ID, "Sepolia only");
 
-        address deployer = vm.envAddress("DEPLOYER_ADDRESS");
-        vm.startBroadcast(deployer);
+        vm.startBroadcast();
         router = new TransferRouter();
         vm.stopBroadcast();
     }
